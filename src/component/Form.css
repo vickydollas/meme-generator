@@ -88,6 +88,13 @@
         -2px 0 0 #000,
         2px 2px 5px #000;
 }
+
+@media(max-width: 600px) {
+    .meme--sizing{
+        height: 50vh;
+    }
+}
+
 @media(max-width: 400px) {
     .form{
         row-gap: .5rem;
