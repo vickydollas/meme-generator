@@ -11,7 +11,7 @@
     left: 13rem;
 }
 .nav--style > p{
-    width: 50%;
+    /* width: 50%; */
     position: relative;
     left: 10rem;
     font-family: monospace;
@@ -20,4 +20,19 @@
 .header--sizing{
     width: 70%;
     color: white;
+}
+/* mobile responsiveness */
+@media(max-width: 400px) {
+    .nav--style{
+        background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+        width: 90%;
+    }
+    .nav--style > div{
+        left: 2rem;
+    }
+    .nav--style > p{
+        left: 5rem;
+        width: 30%;
+        font-size: 1rem;
+    }
 }

@@ -30,7 +30,7 @@ function Form() {
             [name]: value
         }))
     }
-    console.log(meme.bottomText)
+    
     return (
         <div className="bodycont">
             <div className="form">
@@ -38,7 +38,7 @@ function Form() {
                     type="text"
                     placeholder="Top Text"
                     className="form--input"
-                    name="top-Text"
+                    name="topText"
                     value={meme.topText}
                     onChange={handleChange}
                     />
@@ -46,7 +46,7 @@ function Form() {
                     type="text"
                     placeholder="buttom Text"
                     className="form--input"
-                    name="bottom-Text"
+                    name="bottomText"
                     value={meme.bottomText}
                     onChange={handleChange}
                     />
@@ -54,7 +54,7 @@ function Form() {
                     className="form--button"
                     onClick={getMemeImage}>Get a new meme image  🖼</button>
             </div>
-            <div>
+            <div className="form-2">
                 <img 
                     src={meme.randomImage}
                     alt="error"
